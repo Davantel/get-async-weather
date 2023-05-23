@@ -2,7 +2,7 @@ import aiohttp
 import asyncio
 
 async def verificar_tempo(sessao, cidade):
-    api_key = "fa75abe1f56fdef47be365425295d91b"  # Substitua pelo seu próprio API key
+    api_key = "your_key"  # Substitua pelo seu próprio API key
     url = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={api_key}"
 
     async with sessao.get(url) as response:
